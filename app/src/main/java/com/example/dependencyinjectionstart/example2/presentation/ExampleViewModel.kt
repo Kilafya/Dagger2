@@ -8,6 +8,6 @@ class ExampleViewModel @Inject constructor(
 ) {
 
     fun method() {
-
+        useCase.invoke()
     }
 }

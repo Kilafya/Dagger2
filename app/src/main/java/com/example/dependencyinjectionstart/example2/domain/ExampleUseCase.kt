@@ -7,6 +7,6 @@ class ExampleUseCase @Inject constructor(
 ) {
 
     operator fun invoke() {
-
+        repository.method()
     }
 }

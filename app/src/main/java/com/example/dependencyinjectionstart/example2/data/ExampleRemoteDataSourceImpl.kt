@@ -7,6 +7,6 @@ class ExampleRemoteDataSourceImpl @Inject constructor(
 ) : ExampleRemoteDataSource {
 
     override fun method() {
-
+        apiService.method()
     }
 }
