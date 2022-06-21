@@ -9,6 +9,7 @@ class ExampleRepositoryImpl @Inject constructor(
 ) : ExampleRepository {
 
     override fun method() {
-
+        localDataSource.method()
+        remoteDataSource.method()
     }
 }
