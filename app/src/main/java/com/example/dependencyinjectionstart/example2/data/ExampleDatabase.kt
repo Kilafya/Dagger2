@@ -5,10 +5,11 @@ import android.util.Log
 import javax.inject.Inject
 
 class ExampleDatabase @Inject constructor(
-    private val context: Context
+    private val context: Context,
+    private val currentTime: Long
 ) {
 
     fun method() {
-        Log.d("EXAMPLE_TEST", "ExampleDatabase - $this context - $context")
+        Log.d("EXAMPLE_TEST", "ExampleDatabase - $this context - $context - $context current time - $currentTime")
     }
 }

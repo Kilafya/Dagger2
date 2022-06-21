@@ -5,10 +5,11 @@ import android.util.Log
 import javax.inject.Inject
 
 class ExampleApiService @Inject constructor(
-    private val context: Context
+    private val context: Context,
+    private val currentTime: Long
     ) {
 
     fun method() {
-        Log.d("EXAMPLE_TEST", "ExampleApiService - $this context - $context")
+        Log.d("EXAMPLE_TEST", "ExampleApiService - $this context - $context current time - $currentTime")
     }
 }
