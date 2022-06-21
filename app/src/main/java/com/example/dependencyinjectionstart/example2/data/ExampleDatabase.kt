@@ -1,6 +1,8 @@
 package com.example.dependencyinjectionstart.example2.data
 
-class ExampleDatabase {
+import javax.inject.Inject
+
+class ExampleDatabase @Inject constructor() {
 
     fun method() {
 
