@@ -10,28 +10,10 @@ import dagger.Component
 import javax.inject.Singleton
 
 @ApplicationScope
-@Component(modules = [DataModule::class, DomainModule::class])
+@Component(modules = [DataModule::class, DomainModule::class, ViewModelModule::class])
 interface ApplicationComponent {
 
-	fun getViewModel(): ExampleViewModel
-
-	fun getDatabase(): ExampleDatabase
-
-	fun getApiService(): ExampleApiService
-
 	fun inject(activity: MainActivity)
-
-//	@Component.Builder
-//	interface ApplicationComponentBuilder {
-//
-//		@BindsInstance
-//		fun context(context: Context): ApplicationComponentBuilder
-//
-//		@BindsInstance
-//		fun currentTime(time: Long): ApplicationComponentBuilder
-//
-//		fun build(): ApplicationComponent
-//	}
 
 	@Component.Factory
 	interface ApplicationComponentFactory {
