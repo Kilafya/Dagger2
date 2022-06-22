@@ -22,11 +22,9 @@ class MainActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
             viewModel.method()
-            Log.d("SINGLETON_TEST", "View Model - ${component.getViewModel()}")
-            Log.d("SINGLETON_TEST", "View Model - ${component.getViewModel()}")
-            Log.d("SINGLETON_TEST", "Database - ${component.getDatabase()}")
-            Log.d("SINGLETON_TEST", "Database - ${component.getDatabase()}")
-            Log.d("SINGLETON_TEST", "Api Service - ${component.getApiService()}")
-            Log.d("SINGLETON_TEST", "Api Service - ${component.getApiService()}")
+//            Log.d("SINGLETON_TEST", "Database - ${viewModel.method()}")
+//            Log.d("SINGLETON_TEST", "Database - ${component.getDatabase()}")
+//            Log.d("SINGLETON_TEST", "Api Service - ${component.getApiService()}")
+//            Log.d("SINGLETON_TEST", "Api Service - ${component.getApiService()}")
         }
 }

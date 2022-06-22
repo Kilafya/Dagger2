@@ -6,13 +6,12 @@ import com.example.dependencyinjectionstart.example2.di.ApplicationScope
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@ApplicationScope
 class ExampleDatabase @Inject constructor(
     private val context: Context,
     private val currentTime: Long
 ) {
 
     fun method() {
-        Log.d("EXAMPLE_TEST", "ExampleDatabase - $this context - $context - $context current time - $currentTime")
+        Log.d("EXAMPLE_TEST", "ExampleDatabase - $this context - $context current time - $currentTime")
     }
 }
