@@ -5,6 +5,7 @@ import com.example.dependencyinjectionstart.example2.presentation.MainActivity
 import com.example.dependencyinjectionstart.example2.presentation.MainActivity2
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Named
 
 @ApplicationScope
 @Component(modules = [DataModule::class, DomainModule::class])
